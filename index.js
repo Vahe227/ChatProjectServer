@@ -6,7 +6,7 @@ const httpServer = http.createServer();
 dotenv.config();
 
 const origin = process.env.ORIGIN;
-const port = process.env.PORT || 5634;
+const port = process.env.PORT;
 const io = new Server(httpServer, {
     cors: {
         origin: origin,
